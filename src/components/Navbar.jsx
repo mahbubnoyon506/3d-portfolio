@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 
-import { logo, menu } from "../assets";
+import { logo, menu, me } from "../assets";
 import { navLinks } from "../constants";
 import { styles } from "../styles";
 
@@ -42,7 +42,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img
+            src={me}
+            alt="logo"
+            className="w-9 h-9 object-contain rounded-full"
+          />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Mahbub Noyon &nbsp;
             <span className="sm:block hidden"> | Software Engineer</span>
