@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -27,41 +28,37 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
-    // setLoading(true);
-    // SERVICE_KEY;
-    // TEMPLATE_KEY;
-    // PUBLISH_KEY;
-    // emailjs
-    //   .send(
-    //     "service_8yfcs1n",
-    //     "template_jgzzior",
-    //     {
-    //       from_name: form.name,
-    //       to_name: "Mahbub Noyon",
-    //       from_email: form.email,
-    //       to_email: "mahbubnoyon506@gmail.com",
-    //       message: form.message,
-    //     },
-    //     // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-    //     "1oM6fdTkjdyrofY4t"
-    //   )
-    //   .then(
-    //     () => {
-    //       setLoading(false);
-    //       alert("Thank you. I will get back to you as soon as possible.");
-    //       setForm({
-    //         name: "",
-    //         email: "",
-    //         message: "",
-    //       });
-    //     },
-    //     (error) => {
-    //       setLoading(false);
-    //       console.error(error);
-    //       alert("Something went wrong. Please try again.");
-    //     }
-    //   );
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        "service_8yfcs1n",
+        "template_jgzzior",
+        {
+          from_name: form.name,
+          to_name: "Mahbub Noyon",
+          from_email: form.email,
+          to_email: "mahbubnoyon506@gmail.com",
+          message: form.message,
+        },
+        "1oM6fdTkjdyrofY4t"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          alert("Something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
@@ -87,7 +84,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="Type your name"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -98,7 +95,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="Type your email"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>

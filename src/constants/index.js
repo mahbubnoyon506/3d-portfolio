@@ -1,4 +1,7 @@
 import {
+  breezetime,
+  electro,
+  gymapp,
   mobile,
   backend,
   creator,
@@ -18,7 +21,6 @@ import {
   dsl,
   repliq,
   dp,
-  carrent,
   jobit,
   tripguide,
   threejs,
@@ -158,35 +160,36 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      " Absolutely fantastic delivery, both time and deliverable. Have used more than once now and will always continue to only return to Muhbub. Highly recommended !!!!",
+    name: "Evan Luis",
+    designation: "CEO",
+    company: "Investa Garden",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "Mahbub is very profressional. I had a pretty complicated task I had to accomplish with a short period of time. Anas quick jumped on board and supported me get the task done to satisfactory standard",
     name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+    designation: "COF",
+    company: "Ipdental",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "Impressive communication and problem-solving skills. The developer kept us informed throughout the project, making sure we were on the same page at all times. They quickly addressed any issues that arose, ensuring a smooth and successful development process.",
     name: "Lisa Wang",
     designation: "CTO",
-    company: "456 Enterprises",
+    company: "Marvelstack",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    uid: 1,
+    name: "Electro E-Commerce",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Our advanced e-commerce site features a secure authentication system, wishlist functionality, and efficient cart management. The user-friendly dashboard provides concise overviews of products, orders, and customers. With seamless checkout, customers can easily navigate and make secure transactions, ensuring a streamlined shopping experience for all.",
     tags: [
       {
         name: "react",
@@ -200,51 +203,108 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "material-ui",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react-router",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react-hook-form",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "swiper",
+        color: "blue-text-gradient",
+      },
+      // {
+      //   name: "axios",
+      //   color: "green-text-gradient",
+      // },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: electro,
+    source_code_link: "https://github.com/mahbubnoyon506/electro",
+    live_site: "https://assesment-os.vercel.app/",
   },
   {
-    name: "Job IT",
+    uid: 2,
+    name: "Schedule Management",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This project serves as a sophisticated schedule management tool, allowing users to create accounts, select plans, and facilitate payments. Notable features include a robust authentication system, an intuitive dashboard, secure payment processing, JWT-based verification, private routes, email notifications, video chat functionality, user reviews, and a responsive chatbot. The incorporation of time-zone management enhances scheduling precision, providing users with a comprehensive and efficient platform for their planning needs.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "redux",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "react-router",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "react-hook-form",
         color: "pink-text-gradient",
       },
+      {
+        name: "swiper",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: breezetime,
+    source_code_link: "https://github.com/mahbubnoyon506/breeze-time",
+    live_site: "https://breeze-time.vercel.app/",
+  },
+  {
+    uid: 3,
+    name: "Gym App",
+    description:
+      "Welcome to our Gymnastics Center, where users can seamlessly create accounts and purchase packages tailored to their fitness goals. The platform incorporates a robust authentication system to ensure secure access. Additionally, users can leverage the mailing system to conveniently communicate and inquire about any aspects of their gymnastics experience. The inclusion of a verification process further enhances security and trust within the user interface, providing a comprehensive solution for fitness enthusiasts.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "meterial-ui",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react-router",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react-hook-form",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "swiper",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: gymapp,
+    source_code_link: "https://github.com/mahbubnoyon506/gym-app-typescript",
+    live_site: "https://gym-app-typescript.vercel.app/",
   },
 ];
 
