@@ -29,8 +29,14 @@ import repliq from "./company/repliqltd_logo.jpeg";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import breezetime from "../assets/projects/breeze-time7-5.png"
+import electro from "../assets/projects/electro7-5.png"
+import gymapp from "../assets/projects/gym-app-typescript7-5.png"
 
 export {
+  breezetime,
+  electro,
+  gymapp,
   me,
   logo,
   backend,
